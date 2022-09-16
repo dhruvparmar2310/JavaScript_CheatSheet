@@ -28,12 +28,14 @@ function $(selector) {
     self.each = function(){
         for(let i=0; i < self.length; i++){
             if(i%2 == 0){
-                var a = self[i];
-                a.style.setProperty('color', 'green');
+                //var a = self[i];
+                //a.style.setProperty('color', 'green');
+                self[i].style.setProperty('color', 'green');
             }
             else if(i%2 == 1){
-                var b = self[i];
-                b.style.setProperty('color', 'orange');
+                //var b = self[i];
+                //b.style.setProperty('color', 'orange');
+                self[i].style.setProperty('color', 'orange');
             }
             //console.log(self[i]);
 
