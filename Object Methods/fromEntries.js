@@ -36,3 +36,13 @@ const bike = [
 const bikeObject = Object.fromEntries(bike)
 console.log('Converting Array into an Object')
 console.log('bikeObject :>> ', bikeObject)
+
+
+// other transformation
+const obj = { a: 1, b: 2, c: 3 };
+
+const newObj = Object.fromEntries(
+  Object.entries(obj).map(([key, val]) => [key, val * 10]),
+);
+
+console.log(newObj);
