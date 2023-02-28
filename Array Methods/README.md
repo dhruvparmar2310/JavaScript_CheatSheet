@@ -8,5 +8,5 @@ It contains all the array methods in detail.
 - [Array.every()](./every.js)
 - [Array.fill()](./fill.js)
 - [Array.sort()](./sort.js)
-- [AdvanceSort](./AdvanceSort.js)
-- [BehindTheSceneOfMapFunction](./BehindTheSceneOfMapFunction.js)
+- [Advance Sort](./AdvanceSort.js)
+- [Behind the scene of Map function](./BehindTheSceneMapFunction.js)
