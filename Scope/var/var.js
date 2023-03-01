@@ -35,4 +35,11 @@ console.log('outside block: x = ', x); // 50
 var x = 10;
 var x = 'Dhruv'
 
-console.log(x); // Dhruvn no error
+console.log(x); // Dhruv, no error
+
+
+//example-7
+{
+    console.log(x); // undefined
+    var x = 10;
+}
