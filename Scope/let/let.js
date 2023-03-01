@@ -25,3 +25,10 @@ x = 10;
 let x;
 
 console.log(x); //Refernce Error: cannot access x before initialization
+
+
+// example-5
+let x = 10;
+let x = 50;
+
+console.log(x); // SyntaxError: Identifier 'x' has already been declared
