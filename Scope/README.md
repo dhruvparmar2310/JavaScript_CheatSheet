@@ -20,7 +20,7 @@ console.log('x :>> ', x); // Reference Error: x is not defined.
 ```
 
 ## Global Scope:
-Now, if I wanna access the `x` then I need to declare it outside the function as a globally.
+Now, if I wanna access the `x` then I need to declare it outside the function as a globally. `var` is a global scope, but it becomes local scope when declared inside any block or function.
 
 ```javascript
 const x = 10;
