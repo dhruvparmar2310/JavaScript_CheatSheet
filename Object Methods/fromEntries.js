@@ -21,7 +21,7 @@ const carObject = Object.fromEntries(car)
 console.log('Converting Map into an Object')
 console.log('carObject :>> ', carObject)
 
-// converting Array to an Object
+// converting Array to an Object, we need to write only array inside array, other than array cannot be converted.
 const bike = [
     ['name', 'Ninja'],
     ['company', 'Kawasaki'],
@@ -30,7 +30,9 @@ const bike = [
     ['0', [1, 2, 3]],
     ['1', {
         name: 'Dhruv Parmar'
-    }]
+    }],
+  [52], // value will be undefined by defualt
+  {'abc': 'abc'}
 ]
 
 const bikeObject = Object.fromEntries(bike)
@@ -41,6 +43,8 @@ console.log('bikeObject :>> ', bikeObject)
 // other transformation
 const obj = { a: 1, b: 2, c: 3 };
 
+const newObject = Object.entries(obj)
+console.log('object.entries : ', newObject)
 const newObj = Object.fromEntries(
   Object.entries(obj).map(([key, val]) => [key, val * 10]),
 );
