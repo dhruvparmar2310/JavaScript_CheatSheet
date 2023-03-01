@@ -33,6 +33,6 @@ let x = 50;
 
 console.log(x); // SyntaxError: Identifier 'x' has already been declared
 
-//example-6
+//example-6 : A let or const variable is said to be in a "temporal dead zone" (TDZ)
 console.log(x); // Reference Error
 let x = 10;
