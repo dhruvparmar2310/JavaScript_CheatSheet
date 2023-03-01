@@ -5,7 +5,7 @@ There are three types of scopes:
 2) Function Scope and
 3) Block Scope
 
-Lets discuss it with the help of [var](./var/var.js), let and const.
+Lets discuss it with the help of [var](./var/var.js), [let](./let/let.js) and const.
 
 ## Function Scope:
 Anything within the function cannot be accessed outside the function. One function can have many local scopes.
