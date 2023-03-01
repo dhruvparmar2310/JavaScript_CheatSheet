@@ -32,3 +32,7 @@ let x = 10;
 let x = 50;
 
 console.log(x); // SyntaxError: Identifier 'x' has already been declared
+
+//example-6
+console.log(x); // Reference Error
+let x = 10;
