@@ -19,6 +19,7 @@ function doThis () {
 console.log('x :>> ', x); // Reference Error: x is not defined.
 ```
 
+## Global Scope:
 Now, if I wanna access the `x` then I need to declare it outside the function as a globally.
 
 ```javascript
@@ -29,4 +30,33 @@ function doThis () {
 }
 
 doThis()
+```
+
+## Block Scope:
+The variable declared by the `let` and `const` are block scope. But `var` is not block scope.
+
+```javascript
+{
+  var x = 10;
+}
+
+console.log('x :>> ', x); // 10
+```
+
+
+```javascript
+{
+  const x = 10;
+}
+
+console.log('x :>> ', x); // Reference error
+```
+
+
+```javascript
+{
+  let x = 10;
+}
+
+console.log('x :>> ', x); // Reference error
 ```
