@@ -36,3 +36,9 @@ console.log(x); // SyntaxError: Identifier 'x' has already been declared
 //example-6 : A let or const variable is said to be in a "temporal dead zone" (TDZ)
 console.log(x); // Reference Error
 let x = 10;
+
+
+//example-7 : Similar with const. But if we declare x with 'var', there will not be any error.
+var x = 10;
+
+let x = 'Dhruv' // Syntax error: x is already defined. 
