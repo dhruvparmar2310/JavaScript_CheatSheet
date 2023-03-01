@@ -5,7 +5,7 @@ There are three types of scopes:
 2) Function Scope and
 3) Block Scope
 
-Lets discuss it with the help of [var](./var/var.js), [let](./let/let.js) and const.
+Lets discuss it with the help of [var](./var/var.js), [let](./let/let.js) and const. A `let` or `const` variable is said to be in a "temporal dead zone" (TDZ).
 
 ## Function Scope:
 Anything within the function cannot be accessed outside the function. One function can have many local scopes.
