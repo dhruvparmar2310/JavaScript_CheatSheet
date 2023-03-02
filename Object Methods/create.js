@@ -27,4 +27,4 @@ me.foo = 'Object.create() demo' // it will not overwrite the value because it is
 
 
 me.printIntroduction()
-console.log(me, person)
+console.log(me, person) // {name: 'Dhruv Parmar', age: 22, foo: 'hello'}, person will be available inside the me's prototype
