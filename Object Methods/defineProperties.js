@@ -50,8 +50,8 @@ Object.defineProperties(vehicle, {
 })
 
 vehicle.bike.name = 'Ninja ZR1000'
-console.log(vehicle)
-console.log(vehicle.property1)
+console.log(vehicle) // {car: {…}, bus: {…}, bike: {…}, color: Array(2), property1: 'helicopter'}
+console.log(vehicle.property1) // helicopter
 
 /*
 Object.defineProperties(vehicle, {
@@ -66,6 +66,8 @@ Object.defineProperties(vehicle, {
 
 /*
 Object.defineProperty(object, property, descriptor)
+
+here we can only define one property, instead ofthis we can define more properties in defineProperties().
 */
 
 const animal = {
