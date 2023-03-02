@@ -52,7 +52,7 @@ const o4 = { name: 'abc' }
 
 const obj = Object.assign(o1, o2, o3);
 const copyObj = Object.assign({}, o1, null, o2, undefined, o4)
-console.log('copyObj :>> ', copyObj)
+console.log('copyObj :>> ', copyObj) // {a: 1, b: 2, c: 3, name: 'abc'}, it will ignore null and undefined.
 console.log(obj); // { a: 1, b: 2, c: 30 }
 console.log(o1); // { a: 1, b: 2, c: 30 }, target object itself is changed.
 console.log(o2); // { b: 2, c: 3 }
