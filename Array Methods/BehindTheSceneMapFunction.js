@@ -5,13 +5,13 @@ first argument is callback function
 */
 
 const arr = [1, 2, 3, 4, 5]
-const newArr = []
 
 function doThis(element) {
     return element * 2
 }
 
 function Mapping (arr, Func) {
+    const newArr = []
     for (let i = 0; i < arr.length; i++) {
         newArr.push(Func(arr[i]))
     }
