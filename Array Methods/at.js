@@ -9,21 +9,19 @@ const fruits = ['Mango', 'Apple', 'Strawberry', 'Grapes', 'Kiwi']
    which normal array can't do.
 */
 
+
 // behind the hood
-function IndexAt (index) {
-   if (index == 0) {
-      return fruits[0]
-   }
-   if (index > 0) {
-      return fruits[index]
+function IndexAt (arr, index) {
+   if (index >= 0) {
+      return arr[index]
    }
    else {
-      elementIndex = fruits.length + index // logic: (array.length - index)
-      return fruits[elementIndex]
+      let elementIndex = arr.length + index // logic: (array.length - index)
+      return arr[elementIndex]
    }
    
 }
 
 console.log('Behind the Hood')
-console.log(IndexAt(2))
-console.log(IndexAt(-1))
+console.log(IndexAt(['Dhruv', 'Sahil', 'Isha'], -1))
+//console.log(IndexAt(-1))
