@@ -2,25 +2,37 @@
 It will return 'false', if one of the element does not satisfy the condition.
 It accepts a callback function/arrow function/inline function */
 
-arr = [10, 25, 45, 15];
+const arr = [10, 25, 45, 15];
 
 // it will add 'new' = arr.length times.
+/*
 arr.every((elem, index, arr) => {
   arr.push("new");
     
-  console.log('index :>> ',index)
-  console.log(`[${arr}][${index}] -> ${elem}`);
-    console.log('Length :>> ',arr.length)
+  //console.log('index :>> ',index)
+  //console.log(`[${arr}][${index}] -> ${elem}`);
+  //console.log('Length :>> ',arr.length)
   return elem < 50; //10, 15, 25, 45. It means it will iterate 4 times
 });
 
 
-console.log('Executing Array.every() for Deletion...')
+//console.log('Executing Array.every() for Deletion...')
 arr.every((elem, index, arr) => {
   arr.pop();
   
-  console.log(`[${arr}][${index}] -> ${elem}`);
-  console.log('Element :>> ', elem);
+  //console.log(`[${arr}][${index}] -> ${elem}`);
+  //console.log('Element :>> ', elem);
   return elem < 30; //10, 15, 25. It means it will iterate 3 times.
 });
+*/
 
+//behind the hood
+function everyMethod (arr, target) {
+  let elm=[];
+  for (elm of arr) {
+    console.log(elm < target && elm)
+  }
+  return console.log(elm[1])
+}
+
+console.log(everyMethod([10, 25, 45, 15, 30, 20], 25))
